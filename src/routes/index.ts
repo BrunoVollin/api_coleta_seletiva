@@ -1,6 +1,11 @@
-import { Router } from "express";
+import { application, Router } from "express";
 import itemsRouter from "./items.routes";
+import locationsRouter from "./locations.routes";
 
 const routes = Router();
 
-export default routes.use("/items", itemsRouter);
+
+routes.use("/items", itemsRouter);
+routes.use("/loc", locationsRouter);
+
+export default routes;

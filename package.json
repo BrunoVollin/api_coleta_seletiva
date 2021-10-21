@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "ts-node-dev --inspect --ignore-watch node-modules src/server.ts",
     "knex:migration": "knex --knexfile knexfile.ts migrate:latest",
-    "knex:seeds": "knex --knexfile knexfile.ts seed:run"
+    "knex:seed": "knex --knexfile knexfile.ts seed:run"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "knex": "^0.95.11",
+    "knex": "0.95.10",
     "sqlite3": "^5.0.2"
   }
 }
